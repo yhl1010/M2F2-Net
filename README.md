@@ -1,1 +1,1 @@
-# Multi-modal-off-road-freespace-detection
+# Efficient Multi-modal Fusion for Off-road Freespace Detection
