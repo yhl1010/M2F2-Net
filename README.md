@@ -1,1 +1,1 @@
-# Efficient Multi-modal Fusion for Off-road Freespace Detection
+# M2F2-Net: Multi-Modal Feature Fusion for Unstructured Off-Road Freespace Detection
