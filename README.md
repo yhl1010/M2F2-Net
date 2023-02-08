@@ -2,6 +2,11 @@
 ## Introduction
 This is the official PyTorch implementation of M2F2-Net: Multi-Modal Feature Fusion for Unstructured Off-Road Freespace Detection
 
+![result_1](https://user-images.githubusercontent.com/70512651/217461427-2d194fb0-b3b9-489b-8569-69cfaa6d9eb7.png)
+![result_2](https://user-images.githubusercontent.com/70512651/217461448-43530fa4-5d45-4df3-8daf-1c105d79337b.png)
+![result_3](https://user-images.githubusercontent.com/70512651/217461463-90ac9048-7468-49a6-a1d1-c902b0cdaeb9.png)
+
+
 Freespace detection is an important part of autonomous driving technology. Compared with structured on-road scenes, unstructured off-road scenes face more challenges.  Multi-modal fusion method is a viable solution to these challenges. But existing fusion methods do not fully utilize the multi-modal features. In this paper, we propose an effective multi-modal network named M2F2-Net for freespace detection in unstructured off-road scenes. We propose a multi-modal feature fusion strategy named Multi-modal Cross Fusion (MCF). MCF module is simple but effective in fusing the features of RGB images and surface normal maps. Meanwhile, a multi-modal segmentation decoder module is designed to decouple the segmentation of two modalities, and it further helps the features of both modalities to be fully utilized. In order to solve the problem that the road edge is difficult to extract in the unstructured scenes, we also propose an edge segmentation decoder module.
 
 ![image](https://user-images.githubusercontent.com/70512651/216315067-867ec5af-e27a-492f-98f0-2523725f51ad.png)
