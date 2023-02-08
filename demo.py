@@ -16,13 +16,13 @@ def main():
 
     net = m2f2_net.mit_b2()
 
-    ckpt_dir = os.path.join('/home/yehongliang/project/UDA_RoadSeg/ckpts', 'exp_0119_non_local_concat')
+    ckpt_dir = os.path.join('ckpts/', 'test')
     net.load_state_dict(torch.load(os.path.join(ckpt_dir, 'best_epoch.pth')))
 
     net.cuda()
     net.eval()
 
-    useDir = '/raid/yehongliang_data/ORFD_Dataset_ICRA2022/testing'
+    useDir = 'ORFD_Dataset_ICRA2022/testing'
     img_file = 'y2021_0228_1802'
     img_name = '1620330240063.png'
     rgb_image_ori = cv2.imread(os.path.join(useDir, img_file, 'image_data', img_name))
