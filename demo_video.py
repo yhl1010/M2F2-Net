@@ -16,21 +16,20 @@ def main():
 
     net = m2f2_net.mit_b2()
 
-    ckpt_dir = os.path.join('/home/yehongliang/project/UDA_RoadSeg/ckpts', 'exp_0119_non_local_concat')
+    ckpt_dir = os.path.join('ckpts/', 'test')
     net.load_state_dict(torch.load(os.path.join(ckpt_dir, 'best_epoch.pth')))
 
     net.cuda()
     net.eval()
 
-    video_save = os.path.join(save_path, 'video_3.mp4')
+    video_save = os.path.join(save_path, 'video.mp4')
     videoWriter = cv2.VideoWriter(video_save, cv2.VideoWriter_fourcc(*'XVID'), 25, (1920, 360))
 
-    useDir = '/raid/yehongliang_data/ORFD_Dataset_ICRA2022/testing'
+    useDir = 'ORFD_Dataset_ICRA2022/testing'
     img_file = 'y0613_1242'
     list_file = os.path.join(useDir, img_file)
 
     for img_name in sorted(os.listdir(os.path.join(list_file, 'image_data'))):
-        # img_name = '1620330240063.png'
         rgb_image_ori = cv2.imread(os.path.join(list_file, 'image_data', img_name))
         sn_image_ori = cv2.imread(os.path.join(list_file, 'surface_normal', img_name))
 
