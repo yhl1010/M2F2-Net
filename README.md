@@ -30,3 +30,27 @@ The ORFD dataset we used can be found at [ORFD](https://github.com/chaytonmin/Of
  |  |  |-- testing
  ......
 ```
+
+## Usage
+### Image_Demo
+```
+python demo.py
+```
+
+### Video_Demo
+```
+python demo_video.py
+```
+
+### Training
+```
+python train.py --data_root ORFD_Dataset_ICRA2022/ --exp_name test --start_epoch 0 --gpu_ids 0
+```
+
+### Test
+```
+python test.py --data_root ORFD_Dataset_ICRA2022/ --exp_name test --gpu_ids 0
+```
+
+## Acknowledgement
+This repository is based on [SegFormer](https://github.com/NVlabs/SegFormer)
