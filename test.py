@@ -1,6 +1,4 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = '6'
-
 import cv2
 import argparse
 import numpy as np
@@ -16,6 +14,8 @@ def get_arguments():
     parser = argparse.ArgumentParser(description="ORFD test")
     parser.add_argument("--exp_name", type=str, default='test',
                         help="experiment name")
+    parser.add_argument("--gpu_ids", type=str, default='0',
+                        help="choose gpu device.")
     parser.add_argument("--batch_size", type=int, default=1,
                         help="Number of images sent to the network in one step.")
     parser.add_argument("--data_root", type=str, default='ORFD_Dataset_ICRA2022/',
@@ -35,6 +35,7 @@ args = get_arguments()
 
 
 def process():
+    os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_ids
     save_ckpt_path = os.path.join(args.ckpt_dir, args.exp_name)
 
     h, w = map(int, args.input_size.split(','))
