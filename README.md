@@ -61,4 +61,4 @@ python test.py --data_root ORFD_Dataset_ICRA2022/ --exp_name test --gpu_ids 0
 ```
 
 ## Acknowledgement
-This repository is based on [SegFormer](https://github.com/NVlabs/SegFormer), [ORFD](https://github.com/chaytonmin/Off-Road-Freespace-Detection) and [Pytorch-segmentation-toolbox](https://github.com/speedinghzl/pytorch-segmentation-toolbox)
+Our code is inspired by [SegFormer](https://github.com/NVlabs/SegFormer), [ORFD](https://github.com/chaytonmin/Off-Road-Freespace-Detection) and [Pytorch-segmentation-toolbox](https://github.com/speedinghzl/pytorch-segmentation-toolbox)
