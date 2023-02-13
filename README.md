@@ -17,6 +17,9 @@ Freespace detection is an important part of autonomous driving technology. Compa
 - pip install mmcv, mmsegmentation
 - pip install mmcv-full==1.3.16 -f https://download.openmmlab.com/mmcv/dist/cu110/torch1.7.0/index.html
 
+## Pretrained Models
+The pretrained models of our OFF-Net trained on ORFD dataset can be download from [here](https://pan.baidu.com/s/1_Mb8jx8KoR9n11M_lfm4cg)(Extract code：djbv)
+
 ## Datasets
 The ORFD dataset we used can be found at [ORFD](https://github.com/chaytonmin/Off-Road-Freespace-Detection). Extract and organize as follows:
 ```
