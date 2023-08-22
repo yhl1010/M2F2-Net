@@ -1,6 +1,6 @@
 # M2F2-Net: Multi-Modal Feature Fusion for Unstructured Off-Road Freespace Detection
 ## Introduction
-This is the official PyTorch implementation of M2F2-Net: Multi-Modal Feature Fusion for Unstructured Off-Road Freespace Detection
+This is the official PyTorch implementation of M2F2-Net: Multi-Modal Feature Fusion for Unstructured Off-Road Freespace Detection([paper](https://ieeexplore.ieee.org/document/10186731))
 
 ![result_1](https://user-images.githubusercontent.com/70512651/217461427-2d194fb0-b3b9-489b-8569-69cfaa6d9eb7.png)
 ![result_2](https://user-images.githubusercontent.com/70512651/217461448-43530fa4-5d45-4df3-8daf-1c105d79337b.png)
